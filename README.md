@@ -17,3 +17,9 @@ ssi91 Platform repository
 * Создан манифест nginx-lb.yaml
 * Создан web-svc-headless.yaml
 * Создан web-ingress.yaml - манифест Ingress'а, направляющий на Service `web-svc`, определённый в web-svc-headless.yaml
+
+# ДЗ 4:
+
+* Добавлен `StatefulSet` для minio
+* Добавлен `Service`
+* Задание со звёздочкой: значения для `MINIO_ACCESS_KEY` и `MINIO_SECRET_KEY` перенесены в отдельный секрет. Созданный ранее `StatefulSet` теперь отределяет эти переменные из этого секрета.
